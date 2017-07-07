@@ -7,14 +7,14 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-				<form>
+				
 					<div class="form-group">
 						<span id="animationSandbox" style="display: block;"><h1 class="animated rollIn">Find Your Sign</h1></span>
     					<span class="subhead">I'm an aries if you're wondering</span>
@@ -24,20 +24,35 @@
 					</div>
 					<div class="form-group">
 						<!-- runs the function line 66 main.js -->
-						<button type="button" onclick="horoscope()" class="btn btn-primary btn-lg">Find Sign</button>
+						<button type="button" id="button" onclick="horoscope()" onkeyup="horoscope()" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary btn-lg">Find Sign</button>
 					</div>
-				</form>
+				
 
-				<div>
-					<h1 id="yourSign"></h1>
-					<img id="icon" src="">
-					<p id="yourHoroscope"></p>
-				</div>
+				
 			</div>
 		</div>
 	</div>
 
-	<script src="js/main.js"></script>
+	<!-- Large modal -->
+
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div>
+					<h1 id="yourSign"></h1>
+					<img id="icon" src="">
+					<p id="yourHoroscope"></p>
+		</div>
+    </div>
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+ 	 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+  		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
 
 </body>
 </html>

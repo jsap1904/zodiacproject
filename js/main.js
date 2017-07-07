@@ -102,5 +102,13 @@ function horoscope() {
 		document.getElementById("yourSign").textContent = "Not one of the signs. Try again!"
 		document.getElementById("yourHoroscope").textContent = ""
 		document.getElementById("icon").src = ""
+
+		
 	}
 }}
+ 
+$("#userdata").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#button").click();
+    }
+});

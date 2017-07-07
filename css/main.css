@@ -1,15 +1,16 @@
 body {
 	text-align: center;
-	font-family: 'Rancho', cursive;
-	background: url(../img/bg.jpg) no-repeat;
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
 	background-size: cover;
 	opacity: .85;
 	color: white;
 	font-size: 25px;
 
+
 }
 .subhead {
-	color: violet;
+	color: red;
 	font-size: 20px;
 }
 
@@ -18,6 +19,13 @@ body {
 	font-size: 30px;
 }
 #yourHoroscope {
-		color: violet;
-		font-size: 25px;
+		text-align: center;
+		color: red;
+		font-size: 15px;
+}
+
+p {
+	text-align: center;
+	margin:10px 10px 10px 10px;
+
 }
