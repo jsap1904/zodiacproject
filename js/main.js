@@ -95,17 +95,17 @@ function horoscope() {
 
 			// stop the function because we found a match and added the data to the screen!!!
 			return
-		} else if(userdata.value.toLowerCase() != zodiac[i].sign) {
+		} else if (userdata.value.toLowerCase() != zodiac[i].sign) {
 		// confirm no matches are found if that's the case
 		console.log("no matches were found, user failed to type in a correct zodiac sign")
 		// if no match is found, do opposite of above, mostly clearing content and images
-		document.getElementById("yourSign").textContent = "Not one of the signs. Try again!"
+		document.getElementById("yourSign").innerHTML = "Not one of the signs. Try again!";
 		document.getElementById("yourHoroscope").textContent = ""
 		document.getElementById("icon").src = ""
 
-		
+		}
 	}
-}}
+}
  
 $("#userdata").keyup(function(event){
     if(event.keyCode == 13){
